@@ -1,1 +1,400 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta name="description" content="LoRA-MDM- lightweight framework for motion stylization using diffusion models.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>LoRA-MDM</title>
+  <!-- Google tag (gtag.js) -->
+<!-- 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EWRYSDM25P');
+</script>
+ -->
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" href="static/figures/icon2.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+    <section class="publication-header">
+        <div class="hero-body">
+            <div class="container is-max-widescreen">
+                <!-- <div class="columns is-centered"> -->
+                <div class="column has-text-centered">
+                    <h1 class="title is-2 publication-title">Dance Like a Chicken<br>Low-Rank Stylization for Human Motion Diffusion</h1>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="publication-author-block">
+
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <!--
+                    to anonimyze:
+                    1. remove author names (till "..indicates equal...")
+                    2. change link to video.
+                    3. remove bibtex reference.
+-->
+                        <div class="column has-text-centered">
+                            <div class="is-size-3 publication-authors">
+                                <span class="author-block">Under review</span>
+                            </div>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a href="https://scholar.google.com/citations?user=BDUbuAcAAAAJ&hl=en" target="_blank">Haim Sawdayee</a><sup>1</sup>,
+                                    <a href="https://ericguo5513.github.io/" target="_blank">Chuan Guo</a><sup>2</sup>,
+                                    <a href="https://guytevet.github.io/" target="_blank">Guy Tevet</a><sup>1</sup>,
+                                    <a href="https://zhoubinwy.github.io/" target="_blank">Bing Zhou</a><sup>2</sup>,
+                                    <a href="https://jianwang-cmu.github.io/" target="_blank">Jian Wang</a><sup>2</sup>,
+                                    <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H. Bermano</a><sup>1</sup>
+
+                            </div>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Tel-Aviv University,</span>
+                            <span class="author-block"><sup>2</sup>Snap Inc.</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <span class="link-block">
+                                    <a href="TODO" target="_blank"
+                   class="external-link button is-normal is-rounded">
+                                    <!-- <a href="paper.pdf" target="_blank"
+                                        class="external-link button is-normal is-rounded"> -->
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>
+                                </span>
+
+                                <span class="link-block">
+                                    <a href="TODO" target="_blank"
+                                        class="external-link button is-normal is-rounded">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+
+                                <span class="link-block">
+                                    <a href="https://youtu.be/Wi5R6Er8xsU" target="_blank"
+                                        class="external-link button is-normal is-rounded">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- abstract -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+
+                <div class="item">
+                    <p style="margin-bottom: 30px">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Wi5R6Er8xsU?si=vBQ5Jva-1K04YN8Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                    </p>
+                </div>
+                <div class="content has-text-justified">
+                    <p>
+                      Text-to-motion generative models span a wide range of 3D human actions but struggle with nuanced stylistic attributes such as a ”Chicken” style. Due to the scarcity of style-specific data, existing approaches pull the generative prior towards a reference style, which often results in out-of-distribution low quality generations. In this work, we introduce <em>LoRA-MDM</em>, a lightweight framework for motion stylization that generalizes to complex actions while maintaining editability.
+                      </p>
+                      <p>
+                      Our key insight is that adapting the generative prior to include the style, while preserving its overall distribution, is more effective than modifying each individual motion during generation. Building on this idea, <em>LoRA-MDM</em> learns to adapt the prior to include the reference style using only a few samples. The style can then be used in the context of different textual prompts for generation. The low-rank adaptation shifts the motion manifold in a semantically meaningful way, enabling realistic style infusion even for actions not present in the reference samples. Moreover, preserving the distribution structure enables advanced operations such as style blending and motion editing.
+                    </p>
+                    <p>
+                      We compare <em>LoRA-MDM</em> to state-of-the-art stylized motion generation methods and demonstrate a favorable balance between text fidelity and style consistency. 
+                    </p>
+                </div>
+
+                <div class="column is-centered has-text-centered">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- res -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3 is-centered has-text-centered">Generating Stylized Motions</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+      <div class="column is-centered has-text-centered">
+                <video poster="" id="tree" autoplay  muted loop height="100%">
+          <source src="static/figures/res1.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+                <video poster="" id="tree" autoplay  muted height="100%">
+          <source src="static/figures/res2.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+          <video poster="" id="tree" autoplay  muted height="100%">
+            <source src="static/figures/res3.mp4"
+              type="video/mp4">
+          </video>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- method -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="item">
+         <h2 class="title is-3">The Method</h2>
+         <div class="content has-text-justified">
+          <p>
+            Our goal is to generate high-quality human motions in a specified style while preserving the diversity and generalization ability of a pre-trained motion diffusion model (MDM).
+Condition motion generation on style-specific data often leads to a degradation in motion quality and generalization due to the limited diversity of style datasets.
+On the other hand, fine-tuning the whole model using the style data, which includes a handful of motions per style, may lead to an overfit and the forgetting of underrepresented actions.
+</p>
+<p>
+Inspired by personalization literature,
+we train Low-Rank Adaptations for the attention layers of the Motion Diffusion Model (MDM) to shift it toward a given style (e.g., "Chicken") while preserving its structure. The style is represented by a handful of reference motions and bound with a special text token, marked <&#183;>.
+The style and prior loss terms based on the original simple loss, learn the style adaptation and preserve the manifold structure, respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="column is-centered has-text-centered">
+        <img src="static/figures/arch.png" alt="ComMDM" width="720"/>
+      </div>
+
+</div>
+</div>
+</section>
+
+
+<!-- Editing -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 is-centered has-text-centered">Trajectory Control</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+          <p>
+            One of the most important properties of in-domain gener-
+            ation is editability: While generative models struggle with
+            modifying specific semantic aspects while preserving others,
+            they are still capable of achieving this in a disentangled manner.
+             For regions that a model is not well familiar with, this is
+            a nearly impossible task.
+          </p>
+          <p>
+            To demonstrate in-distribution generation, 
+            we integrate <em>LoRA-MDM</em> with an off-the-shelf motion editing technique [Shafir et al.], which demonstrates that new controls can be added to the MDM backbone through simple self-supervised fine-tuning.
+            Note how the body realistically shifts sideways and the hands raise correctly in an asymmetric manner to incorporate turning while jumping on one leg. 
+          </p>
+        </div>
+	  </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+      <div class="has-text-centered">
+        <p style="margin-bottom: 20px"></p>
+        <video poster="" id="tree" autoplay  muted loop>
+          <source src="static/figures/traj.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+</section>
+
+
+<!-- mixing -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 is-centered has-text-centered">Style Mixing</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+          <div class="content has-text-justified">
+          <p>
+            Each style is assigned a unique token, allowing multiple styles to be incorporated within a single set of LoRA weights by training on them simultaneously.
+            By embedding multiple style tokens within the same LoRA module, we enable style mixing —where conditioning on multiple tokens blends their stylistic attributes. 
+            Although each style is learned independently, combining tokens within a prompt results in a coherent fusion of styles.
+          </p>
+          
+        </div>
+	  </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+      <div class="has-text-centered">
+        <p style="margin-bottom: 20px"></p>
+        <video poster="" id="tree" autoplay  muted loop>
+          <source src="static/figures/mix.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+</section>
+
+
+<!-- baselines -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Baselines</h2>
+        <div class="content has-text-justified">
+          <p>
+            Our first baseline, called <em>style in prompt</em> or <em>prompting</em>, is the base MDM model, without LoRA training, which gets the style description in the text prompt (e.g., <i>"A person [...] <b>in chicken style</b></i>").
+            We introduce this baseline to 
+            assess whether the model can naturally interpret stylistic descriptors without explicit adaptation.
+          </p><p>
+            Additionally, we compare our method to two state-of-the-art approaches for stylized motion generation: <em>SMooDi</em> and <em>MoMo</em>.  
+            SMooDi leverages ControlNet along with classifier-based and classifier-free guidance to condition the generation process on a reference style motion.
+            MoMo, on the other hand, 
+            is a training-free method that
+            utilizes the attention mechanism of MDM to semantically fuse reference "follower" and "leader" motions into one motion. Those motions can be specified either by a prompt or as a reference motion. The authors demonstrate stylized motion generation by injecting the style reference as the "follower" and the content as the "leader". We follow this framework and perform stylized motion generation using the style motion from 100STYLE as the "follower", and the HumanML3D text prompt as the "leader".
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> 
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-centered has-text-centered">
+      <h2 class="title is-3 is-centered has-text-centered">Comparisons</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+
+      <div class="column is-centered has-text-centered">
+                <video poster="" id="tree" autoplay  muted loop height="100%">
+          <source src="static/figures/comparisons1.mp4"
+          type="video/mp4">
+        </video>
+      </div>
+      <div class="column is-centered has-text-centered">
+                <video poster="" id="tree" autoplay  muted height="100%">
+          <source src="static/figures/comparisons2.mp4"
+          type="video/mp4">
+      </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        TODO
+</code></pre>
+    </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="columns is-centered">
+    <div class="column is-8">
+      <div class="content">
+        <p>
+          This website is licensed under a <a rel="license"
+          href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+        Commons Attribution-ShareAlike 4.0 International License</a>.
+      </p>
+      <p>
+        Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If you want to reuse their <a
+        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them appropriately.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</footer>
+
+
+  <script type="text/javascript">
+    var sc_project=12351448; 
+    var sc_invisible=1; 
+    var sc_security="c676de4f"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+    href="https://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="https://c.statcounter.com/12351448/0/c676de4f/1/"
+    alt="Web Analytics"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
