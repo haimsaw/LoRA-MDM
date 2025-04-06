@@ -1,0 +1,18 @@
+A person is walking in {token} style.
+A person is jumping in {token} style.
+A person is skipping in {token} style.
+A person kicks in {token} style.
+A person punchs in {token} style.
+A person stretches in {token} style.
+A person is crouching in {token} style.
+A person is jumping on one leg in {token} style.
+A person is raising hands in {token} style.
+A person performs martial arts in {token} style.
+A person is waving with both hands in {token} style.
+A person is punching the air with his right arm in {token} style.
+A person dancing waltz in {token} style.
+A person dancing in {token} style.
+A person dancing wildly in {token} style.
+A person walks forward, and then sits down in {token} style.
+A person sits down in {token} style.
+A Person crawls on the floor in {token} style
