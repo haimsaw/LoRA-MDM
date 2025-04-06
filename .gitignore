@@ -127,7 +127,6 @@ glove
 failed_runs/
 slurm_exp/
 t2m
-t2m_haim
 ENV/
 env.bak/
 venv.bak/

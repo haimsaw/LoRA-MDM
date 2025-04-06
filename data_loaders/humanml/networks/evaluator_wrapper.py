@@ -109,7 +109,7 @@ def build_evaluators(opt):
     if opt['dataset_name'] == 'humanml':
         ckpt_dir = 't2m'
 
-    checkpoint = torch.load(pjoin(opt['checkpoints_dir'], 't2m_haim', 'text_mot_match', 'model', 'finest.tar'),
+    checkpoint = torch.load(pjoin(opt['checkpoints_dir'], 't2m', 'text_mot_match', 'model', 'finest.tar'),
                             map_location=opt['device'])
     movement_enc.load_state_dict(checkpoint['movement_encoder'])
     text_enc.load_state_dict(checkpoint['text_encoder'])

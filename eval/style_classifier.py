@@ -238,7 +238,7 @@ def eval_test(device, labels_key_us, style_loader_test, classifier, loss_fn, epo
     running_loss = 0
     hit1, hit3, hit5 = 0,0,0
     for j, (motions, kwargs) in enumerate(style_loader_test):
-        target = torch.tensor([labels_key_us.index(v) for v in kwargs['y']['action']], device=device) # todo haim move to dataset
+        target = torch.tensor([labels_key_us.index(v) for v in kwargs['y']['action']], device=device)
         motions = motions.to(device)
         lengths = kwargs['y']['lengths'].to(device)
             

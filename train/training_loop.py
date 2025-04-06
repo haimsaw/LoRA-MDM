@@ -409,7 +409,7 @@ class TrainLoop:
         gen_args.num_repetitions = self.args.gen_num_repetitions
         gen_args.guidance_param = self.args.gen_guidance_param
         gen_args.motion_length = None  # length is taken from the dataset
-        gen_args.input_text = "./assets/haim_text_prompts.txt"
+        gen_args.input_text = "assets/example_text_prompts.txt"
         gen_args.tokens = self.data.dataset.tokens[:len(self.data.dataset.styles)]
         gen_args.diffusion_steps = 100
         gen_args.text_prompt = gen_args.action_file = gen_args.action_name = ''
