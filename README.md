@@ -1,5 +1,5 @@
   # LoRA-MDM
-  [![arXiv](https://img.shields.io/badge/arXiv-<2503.19557>-<COLOR>.svg)](https://arxiv.org/abs/2503.19557)
+  [![arXiv](https://img.shields.io/badge/arXiv-2503.19557-<COLOR>.svg)](https://arxiv.org/abs/2503.19557)
 
 
   The official PyTorch implementation of the paper [**"Dance Like a Chicken: Low-Rank Stylization for Human Motion Diffusion"**](https://arxiv.org/abs/2503.19557).
@@ -68,7 +68,7 @@
     <summary><b>Text to Motion</b></summary>
 
   download the [HumanML3d dataset](https://drive.google.com/drive/folders/1OZrTlAGRvLjXhXwnRiOC-oxYry1vf-Uu?usp=drive_link) and place them it in `.dataset/HumanML3D`. 
-
+  </details>
   ### 3. Download the pretrained models
 
   Download the model(s) you wish to use from this [Drive](https://drive.google.com/drive/folders/1_YpQ9cLMBVvBhAXCTEcsIen1NkpS6UYL?usp=sharing), then unzip and place them in `./save/`. 
