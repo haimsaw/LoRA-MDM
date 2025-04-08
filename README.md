@@ -69,6 +69,7 @@
 
   download the [HumanML3d dataset](https://drive.google.com/drive/folders/1OZrTlAGRvLjXhXwnRiOC-oxYry1vf-Uu?usp=drive_link) and place them it in `.dataset/HumanML3D`. 
   </details>
+  
   ### 3. Download the pretrained models
 
   Download the model(s) you wish to use from this [Drive](https://drive.google.com/drive/folders/1_YpQ9cLMBVvBhAXCTEcsIen1NkpS6UYL?usp=sharing), then unzip and place them in `./save/`. 
