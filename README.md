@@ -68,6 +68,8 @@
     <summary><b>Text to Motion</b></summary>
 
   download the [HumanML3d dataset](https://drive.google.com/drive/folders/1OZrTlAGRvLjXhXwnRiOC-oxYry1vf-Uu?usp=drive_link) and place them it in `.dataset/HumanML3D`. 
+
+  Download [this](https://drive.google.com/file/d/1EJb7DkbtxOi_99cCwE9McKf7F8x3Azzr/view?usp=drive_link) file and place it in dataset/humanml_opt.txt
   </details>
   
   ### 3. Download the pretrained models
