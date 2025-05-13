@@ -7,7 +7,6 @@ HumanML3D
 truebones
 slurm_sigal/logs
 save_code
-BERT
 wandb
 t2m_train.npy
 t2m_test.npy
