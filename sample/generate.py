@@ -94,7 +94,7 @@ def main(args=None):
     print(f"Loading checkpoints from [{args.model_path}]...")
     load_saved_model(model, args.model_path, use_avg=args.use_ema)
             
-    if args.lora_finetune and args.lora_path is not None:
+    if args.lora_finetune:
         model.add_LoRA_adapters()
         if args.lora_path is not None:
             load_lora_to_model(model, args.lora_path, use_avg=args.use_ema)
